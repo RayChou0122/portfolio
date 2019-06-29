@@ -9,3 +9,6 @@ class Blog(models.Model):
 
 	def __str__(self):
 		return self.title
+
+	def brief(self):
+		return self.text[:100]+'...'
