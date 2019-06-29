@@ -7,7 +7,7 @@
 
 <!doctype html>
 <html lang="en">
-
+  {% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -79,11 +79,12 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">XCY的主页</h1>
+      <img src="{% static "66510777_p0_master1200.jpg" %}" width=75%>
       <p class="lead text-muted">Don’t let the noise of others’ opinions drowns out your own inner voice, and most important，have the courage to follow your heart and intuition. <br>别让别人的观念埋没了自己内在的声音，要有勇气跟随自己的心与直觉，这才是最最重要的。
 </p>
       <p>
         <a href="blog" class="btn btn-primary my-2">前往她的博客</a>
-        <a href="#" class="btn btn-secondary my-2">暂无功能</a>
+        <a href="{% static 'psbe.webp' %}" class="btn btn-secondary my-2">她的简历</a>
       </p>
     </div>
   </section>
